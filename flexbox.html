@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container{
+            height: 500px;
+            width: 100%;
+            border: 2px solid black;
+            /* initialize the container as flexbox */
+            display: flex;
+            /* flex properties for container */
+            flex-direction: row;
+            flex-wrap: wrap;
+            /* flex-flow: row-reverse wrap;
+            justify-content: space-between;*/
+            justify-content: space-evenly; /* justifies in horizontal direction */
+            align-items: flex-start; /* justifies in vertical direction */
+            align-items: stretch;
+        }
+        .item{
+            width: 150px;
+            height: 200px;
+            background-color: tomato;
+            border: 2px solid green;
+            margin: 10px;
+            padding: 3px;
+        }
+        #item-1{
+            flex-grow: 2;
+            flex-shrink: 2;
+            flex-basis: 210px;
+        }
+        #item-2{
+            flex-grow: 3;
+            flex-shrink: 3;
+            flex: 2 2 260px;
+            /* flex: grow shrink basis; */
+        }
+        #item-3{
+            flex: 3 3 300px;
+            align-self: flex-start;
+            align-self: flex-end;
+            align-self: center;
+        }
+        /* #item-4{}
+        #item-5{}
+        #item-6{} */
+    </style>
+</head>
+<body>
+    <h1>This is a flexbox practice</h1>
+    <div class="container">
+        <div class="item" id="item-1">First Box</div>
+        <div class="item" id="item-2">Second Box</div>
+        <div class="item" id="item-3">Third Box</div>
+        <!-- <div class="item" id="item-4">Fourth Box</div>
+        <div class="item" id="item-5">Fifth Box</div>
+        <div class="item" id="item-6">Sixth Box</div> -->
+    </div>
+
+</body>
+</html>

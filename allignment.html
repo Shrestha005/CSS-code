@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allignment</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            border: 2px solid rgb(125, 25, 119);
+            width: 900px;
+            background-color: rgb(224, 197, 201);
+            margin: 33px auto;
+            }
+        .item{
+            border: 2px solid rgb(37, 39, 151);
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background: rgb(176, 180, 209);
+        }
+        #fruit{
+            float: left;
+            width: 48%;
+        }
+        #snack{
+            float: left;
+            width: 48%;
+        }
+        #stationary{
+            /*float: left;*/
+            clear: both;
+            width: 100%;
+        }
+        p, h3{
+            text-align: right;
+            text-align: left;
+            text-align: center;
+            text-align: justify;
+        }
+        h1{
+            margin: 23px auto;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to my store</h1>
+        <div id="fruit" class="item">
+            <h3>Fruit</h3>
+            <p id="fruitpara" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam reprehenderit labore dolorum provident! Consectetur laborum hic iusto, eligendi rem cum nemo tempora id adipisci facere eos reiciendis eius! Quod, labore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, porro dolorem. Beatae, corrupti id at nobis dignissimos quasi recusandae fugit laudantium unde quaerat! Maiores nostrum sapiente quod? Ab, temporibus quidem?</p>
+        </div>
+        <div id="snack" class="item">
+            <h3>Snack</h3>
+            <p id="snackpara" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam reprehenderit labore dolorum provident! Consectetur laborum hic iusto, eligendi rem cum nemo tempora id adipisci facere eos reiciendis eius! Quod, labore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab enim sed quia similique! Repellat dignissimos sed nostrum dolore nulla a amet sit dolor, ipsum laudantium consequuntur, deserunt corporis praesentium voluptates possimus recusandae perferendis ratione qui pariatur omnis, voluptas aliquid voluptatum.</p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="stationarypara" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam reprehenderit labore dolorum provident! Consectetur laborum hic iusto, eligendi rem cum nemo tempora id adipisci facere eos reiciendis eius! Quod, labore?</p>
+        </div>
+        <div id="toy" class="item">
+            <h3>toy</h3>
+            <p id="toypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, amet consequatur. Dolores esse magnam placeat iusto magni minus corporis, doloremque suscipit, iste tempora, soluta temporibus!</p>
+        </div>
+    </div>
+</body>
+</html>

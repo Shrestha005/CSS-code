@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model, Margin and Padding </title>
+    <style>
+        /* universal selector *{} */
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        /* body selector */
+        body{
+            background-color: rgb(39, 87, 164);
+        }
+        .container{
+            background-color: burlywood;
+            border: 3px solid brown;
+            /* padding: 40px; */
+            /*padding= top right bottom left [TRBL]
+            padding= 23px 56px 6px 78px , same applies for margin as well */
+            padding: 34px 19px; /* padding: y(top/bottom) x(left/right) */
+            margin: 14px 19px;
+            border-radius: 23px;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis aspernatur natus exercitationem inventore laborum deserunt, voluptatum totam aperiam, nihil sed blanditiis deleniti alias?</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis aspernatur natus exercitationem inventore laborum deserunt, voluptatum totam aperiam, nihil sed blanditiis deleniti alias?</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis aspernatur natus exercitationem inventore laborum deserunt, voluptatum totam aperiam, nihil sed blanditiis deleniti alias?</p>
+    </div>
+</body>
+</html>

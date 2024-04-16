@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after pseudo selector</title>
+    <link href='https://fonts.googleapis.com/css?family=Barrio' rel='stylesheet'>
+    <style>
+        body{
+            background-color: black;
+            color: azure;
+            margin: 0;
+            padding: 0;
+        }
+        header::before{
+            /* background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover; */
+            background: url(https://images.pexels.com/photos/1089438/pexels-photo-1089438.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+        .navigation{
+            font-size: 25px;
+            display: flex;
+        }
+        li{
+            list-style-type: none;
+            padding: 30px;
+        }
+        section{
+            height: 320px;
+            /* border: 2px solid salmon; */
+            margin: 15px 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        /* section::before{
+            content: "this is the content";
+        } */
+        /* section::after{
+            content: "this is the content";
+        } */
+        h3{
+            color: salmon;
+            font-family: 'Barrio';
+            font-size: 4rem;
+        }
+        p{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">home</li>
+                <li class="item">about</li>
+                <li class="item">services</li>
+                <li class="item">contact us</li>
+            </ul>
+        </nav>
+    </header>
+        <section>
+            <h3>welcome to coding world</h3>
+            <p>Programming refers to a technological process for telling a computer which tasks to perform in order to solve problems. You can think of programming as a collaboration between humans and computers, in which humans create instructions for a computer to follow (code) in a language computers can understand. At its most basic, programming tells a computer what to do. First, a programmer writes code—a set of letters, numbers, and other characters. Next, a compiler converts each line of code into a language a computer can understand. Then, the computer scans the code and executes it, thereby performing a task or series of tasks. Tasks might include displaying an image on a webpage or changing the font of a section of text. </p>
+        </section>
+        <hr>
+</body>
+</html>

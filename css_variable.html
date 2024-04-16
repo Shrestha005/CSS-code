@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS variables/custom properties</title>
+</head>
+<style>
+    :root{
+        /* for global variables */
+        --boxcolour: rgb(33, 101, 125);
+        --primary-colour: rgb(223, 223, 113);
+        --danger-colour: rgb(197, 126, 126);
+        --maxwidth: 500px;
+    }
+    .box{
+        /* --boxcolour: yellowgreen; */
+        width: 200px;
+        height: 200px;
+        background-color: salmon;
+        /* background-color: var(--boxcolour); */
+        border: 2px solid slateblue;
+        box-shadow: 3px 3px var(--boxcolour);
+        margin: 2px 10px;
+    }
+    .container{
+        max-width: var(--maxwidth);
+        margin: auto;
+        background-color: var(--danger-colour);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--boxcolour);
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
